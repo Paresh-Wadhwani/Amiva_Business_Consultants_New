@@ -47,3 +47,8 @@ a.navbar-brand
 {
     text-decoration: underline;
 }
+
+#email
+{
+    word-wrap: break-word;
+}
