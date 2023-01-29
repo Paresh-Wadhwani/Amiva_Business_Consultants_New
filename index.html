@@ -23,7 +23,7 @@
 			crossorigin = "anonymous"
 		>
 		<link rel = "stylesheet"
-			href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+			href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
 		>
 		<link rel="stylesheet" href="./style.css">
 		<link rel = "icon" href = "./images/logo.png">
@@ -240,32 +240,50 @@
 
 			</section>
 
-			<!-- Button trigger modal -->
-			<div class = "text-center">
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-					Contact Us
-				</button>
-			</div>
+			<section class="container">
 
-			<!-- Modal -->
-			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLongTitle">Contact Form</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+				<span class = "text-dark">
+					<i class="bi bi-envelope-paper"></i>
+					Get in Touch
+				</span>
+
+				<form name = "contact" netlify>
+
+					<div class="form-group">
+
+						<label for="name">Full Name</label>
+						<input type="text" class="form-control" id="name" placeholder="John Doe" required>
+
+					</div>
+
+					<div class="form-group">
+
+						<label for="phone">Phone</label>
+						<div class="input-group mb-2">
+
+							<div class="input-group-prepend">
+								<span class="input-group-text">+91</span>
+							</div>
+							<input type="text" class="form-control" id="phonr" placeholder="9876543210" required>
+
+						</div>
+
+					</div>
+
+					<div class="form-group">
+
+						<label for="email">Email address</label>
+						<input type="email" class="form-control" id="email" placeholder="abc@server.com" required>
+
+					</div>
+
+					<button type="submit" class="btn btn-primary">
+						Submit
+						<i class="bi bi-arrow-right"></i>
 					</button>
-				</div>
-				<div class="modal-body">
-					Fields will be shown here
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					<button type="submit" class="btn btn-primary">Submit</button>
-				</div>
-				</div>
-			</div>
-			</div>
+				</form>
+
+			</section>
 
 			<section id = "contact" class = "p-5 pb-0">
 
