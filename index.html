@@ -240,48 +240,75 @@
 
 			</section>
 
-			<section class = "container">
+			<section class = "p-5">
 
-				<span class = "text-dark">
-					<i class = "bi bi-envelope-paper"> </i>
-					Get in Touch
-				</span>
+				<div class = "container shadow-lg p-3 bg-white rounded" id = "contact-form">
 
-				<form name = "contact" method = "POST" data-netlify = "true" netlify>
+					<div class = "row align-items-center justify-content-between g-5 p-4">
 
-					<div class = "form-group">
+						<div class = "col-lg text-dark text-center">
 
-						<label for = "name">Full Name</label>
-						<input type = "text" class = "form-control" id = "name" placeholder = "John Doe" name = "name" required>
+							<i id = "contact-icon" class = "bi bi-envelope-paper"> </i>
+							<h1 class = "fw-bold">Get in Touch</h1>
+							<small>Fill this form and our team will soon reach out to you.</small>
+	
+						</div>
+		
+						<div class = "col-lg">
+	
+							<form name = "contact" method = "POST" data-netlify = "true" netlify>
+		
+								<div class = "form-group mb-3">
+			
+									<label for = "name">Full Name</label>
+									<input type = "text" class = "form-control" id = "name" name = "name" required>
+			
+								</div>
+			
+								<div class = "form-group mb-3">
+			
+									<label for = "phone">Phone</label>
+									<div class = "input-group">
+			
+										<div class = "input-group-prepend">
+											<span class = "input-group-text">+91</span>
+										</div>
+										<input type = "text" class = "form-control" id = "phone" placeholder = "9876543210" name = "phone" required>
+			
+									</div>
+			
+								</div>
+			
+								<div class = "form-group mb-3">
+			
+									<label for = "email">Email address</label>
+									<input type = "email" class = "form-control" id = "email" placeholder = "example@server.com" name = "email" required>
+			
+								</div>
+	
+								<div class = "form-group mb-4">
+			
+									<label for = "gst">GST [Optional]</label>
+									<input type = "text" class = "form-control" id = "gst" name = "gst" required>
+			
+								</div>
+			
+								<div class = "d-grid gap-2">
 
-					</div>
-
-					<div class = "form-group">
-
-						<label for = "phone">Phone</label>
-						<div class = "input-group mb-2">
-
-							<div class = "input-group-prepend">
-								<span class = "input-group-text">+91</span>
-							</div>
-							<input type = "text" class = "form-control" id = "phone" placeholder = "9876543210" name = "phone" required>
-
+									<button type = "submit" class = "btn btn-primary">
+										Submit
+										<i class = "bi bi-arrow-right"> </i>
+									</button>
+									
+								</div>
+								
+							</form>
+	
 						</div>
 
 					</div>
 
-					<div class = "form-group">
-
-						<label for = "email">Email address</label>
-						<input type = "email" class = "form-control" id = "email" placeholder = "abc@server.com" name = "email" required>
-
-					</div>
-
-					<button type = "submit" class = "btn btn-primary">
-						Submit
-						<i class = "bi bi-arrow-right"> </i>
-					</button>
-				</form>
+				</div>
 
 			</section>
 
@@ -294,7 +321,7 @@
 						<div>
 
 							<h3 class = "mb-2">
-								Contact Info
+								Say Hello!!
 							</h3>
 
 							<p id = "email"> <a class = "text-dark" href = "mailto:contact@amivabusinessconsultants.com">contact@amivabusinessconsultants.com</a> </p>
